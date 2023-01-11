@@ -1,0 +1,160 @@
+@import url(https://fonts.google.com/specimen/Montserrat);
+@import url(https://fonts.google.com/specimen/Fraunces);
+
+
+/*CSS RESSERT*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  html, body {
+    height: 100%;
+   
+  }
+ 
+  body {
+    background-color:hsl(30, 38%, 92%);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    width: 1440px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  input, button, textarea, select {
+    font: inherit;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    font-size: inherit;
+  }
+  /*Project styling*/
+
+   .content{
+    display: grid;
+    width:500px;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr;
+    
+  }
+  
+  
+  .product__info{
+    background-color: hsl(0, 0%, 100%);
+    padding: 1.5rem;
+    
+  }
+
+  #heading{
+    font-size: 0.55rem;
+    letter-spacing: 0.4rem;
+    font-weight: 500;
+    font-family: 'Montserrat',sans-serif;
+    color: hsl(228, 12%, 48%);
+    align-items: center;
+
+  }
+
+  #name{
+    font-family: 'Fraunces',sans-serif;
+    font-size: 1.8rem;
+    font-weight: 900;
+    color:hsl(212, 21%, 14%);
+    line-height: 1.7rem;
+    margin-top: 1rem;
+  }
+  #description{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.3rem;
+    margin-top: 1rem;
+
+  }
+  .price{
+    display: flex;
+    gap:1rem;
+    align-items: center;
+    margin-top: 0.5rem;
+
+  }
+  #price1{
+    font-family: 'Fraunces',sans-serif ;
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+
+  #price2{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+  }
+
+  .button{
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%;
+    padding: 0.75em 1.5em;
+    justify-content: center;
+    border-style: none;
+    display: inline-flex;
+    border-radius: 0.5rem;
+    align-items: center;
+    background-color:hsl(158, 36%, 37%); 
+    color: hsl(0, 0%, 100%);
+    gap: 0.5rem;
+    font-weight:500;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 500;
+  }
+  .button[data-icon="cart"]::before{
+    background-image: url("images/icon-cart.svg") ;
+    content: "";
+    width: 15px;
+    height: 16px;
+  
+  }
+  @media (max-width: 375px) {
+    html, body {
+      
+      max-width: 375px;
+      justify-content: center;
+    align-items: center;
+    display: flex;
+     
+    }
+  
+    .content{
+      margin-top: 8rem;
+      padding: 2rem;
+      padding-left: 5rem;
+      grid-template-columns: none;
+      height: 100%;
+      border-radius: 0.8rem;
+      overflow: hidden;
+    }
+    
+    }
+    
+    
+  
+ 
